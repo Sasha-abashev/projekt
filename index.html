@@ -1,28 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header"></header>
-    <main class="main">
-        <h2>Перевір в який рік ти народився</h2>
-    <div class="container">
-        <input type="number" id="yearInput" placeholder="Введіть рік народження">
-        <button class="search-btn">🔍</button>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniGames</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Перевір в який рік ти народився</h1>
+    <input type="text" id="yearInput" placeholder="Введіть рік народження" />
+    <button id="buttonInput">Перевірити</button>
     <p id="result"></p>
-    <h2>Вгадай число, яке загадав комп’ютер</h2>
-    <div class="container">
-        <input type="number" id="yearInputNumber" placeholder="Введіть число">
-        <button class="search-btn-number">🔍</button>
-    </div>
-    <p id="resultNumber"></p>
-    </main>
-    <footer class="footer"></footer>
-    <script src="papkajs/script.js" type="module"></script>
-</body>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Вгадай число, яке загадав комп’ютер</h1>
+    <input type="text" id="numberInput" placeholder="Введіть число" />
+    <button id="guessButton">Вгадай число</button>
+    <p id="guessResult"></p>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Камінь - ножиці - папір</h1>
+    <button id="stone">Камень</button>
+    <button id="scissors">Ножниці</button>
+    <button id="paper">Папір</button>
+    <p id="stscResult"></p>
+    <p id="st-p">Рахунок</p>
+    <p id="ai-score">Комп’ютер - 0</p>
+    <p id="pl-score">Ви - 0</p>
+    <p id="stscP">Варіант комп’ютера</p>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1 class="cal-p">Калькулятор</h1>
+    <input class="cal-in" placeholder="Введіть число" />
+    <button class="button-plus">+</button>
+    <button class="button-minus">-</button>
+    <button class="button-mno">*</button>
+    <button class="button-dil">/</button>
+    <input class="cal-in2" placeholder="Введіть число" />
+    <button class="button-res">=</button>
+    <p class="cal-result"></p>
+    <!-- //ffff -->
+    <h1>Калькулятор часу</h1>
+    <input id="input-time" placeholder="ВВЕДИ ВЖЕ ТОЙ ЧАС" type="text" />
+    <p id="p-time">0</p>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Google динозавр</h1>
+    <iframe
+      src="https://wayou.github.io/t-rex-runner/"
+      width="600"
+      height="200"
+      style="border: none"
+    ></iframe>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Футбол</h1>
+    <div id="pole"></div>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Введіть 3 числа</h1>
+    <input id="3n-input" type="text" />
+    <input id="3n-input2" type="text" />
+    <input id="3n-input3" type="text" />
+    <p id="3n-p"></p>
+    <button id="3n-button">Обрати велике число</button>
+    <p>
+      ------------------------------------------------------------------------------------------
+    </p>
+    <h1>Обери вченого/их</h1>
+    <ul class="ul-sc" id="scientist-list"></ul>
+    <ul>
+      <li>
+        <button id="scientist-question">Які вчені народилися в 19 ст.</button>
+      </li>
+      <li>
+        <button id="scientist-question2">
+          Відсортувати вчених за алфавітом
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question3">
+          Відсортувати вчених за кількістю прожитих років
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question4">
+          Знайти вченого, який народився найпізніше
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question5">
+          Знайти рік народження Albert Einstein
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question6">
+          Знайти вчених, прізвища яких починаються на літеру “C”
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question7">
+          Видалити всіх вчених, ім’я яких починається на “A”
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question8">
+          Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+        </button>
+      </li>
+      <li>
+        <button id="scientist-question9">
+          Знайти вчених, в яких співпадають перші літери імені і прізвища
+        </button>
+      </li>
+    </ul>
+    <script type="module" src="JS/year.js"></script>
+    <script type="module" src="JS/paper.js"></script>
+    <script type="module" src="JS/calculator.js"></script>
+    <script type="module" src="JS/number-guess.js"></script>
+    <script type="module" src="JS/time.js"></script>
+    <script type="module" src="JS/3numbers.js"></script>
+    <script type="module" src="JS/vcheni.js"></script>
+  </body>
 </html>
